@@ -4,7 +4,7 @@
 * Client1 will read intergers from the socket and calculate the Mean value of the integers.
 * Client2 will read intergers from the pipe and calculate the Median value of the integers.
 * client3 will read intergers from the shared memory, and calculate the Mode value of the integers.
-* Only Test on mac OS Big Sur 11.2.3
+* Only test on mac OS Big Sur 11.2.3
 
 ### Pre Work
 ```bash
