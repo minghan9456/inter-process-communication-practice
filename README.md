@@ -20,7 +20,7 @@ $ cp ./.env.example ./env
 $ npm run start
 ```
 
-### Docker Setup
+### Launch on Docker
 ```bash
 # Build image and attach container.
 $ sh ./run.sh
@@ -49,4 +49,4 @@ close
 ```
 
 ### TODO
-* if has too many I/O, shared memory process has the problem about `too many open files` on mac OS.
+* if has too many I/O, shared memory process has the problem about `too many open files` on mac OS. (But not happen on docker image node:16)
