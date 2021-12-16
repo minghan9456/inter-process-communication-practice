@@ -36,4 +36,4 @@ $ npm run start
 ```
 
 ### TODO
-* Shared memory process has the problem about `too many open files` on mac OS.
+* if has too many I/O, shared memory process has the problem about `too many open files` on mac OS.
