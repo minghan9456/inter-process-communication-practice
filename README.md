@@ -20,6 +20,12 @@ $ cp ./.env.example ./env
 $ npm run start
 ```
 
+### Docker Setup
+```bash
+# Build image and attach container.
+$ sh ./run.sh
+```
+
 ### Example
 > Types integers and separate them by using [Space]. After clicking [Enter].
 ```bash
@@ -33,6 +39,13 @@ $ npm run start
 [2] Mean is 5.857142857142857
 [1] Mode is 5
 [0] Median is 5
+close
+[1] Server Closing.
+[0] Client2 Connection Closed.
+[2] Client1 Connection Closed.
+[0] node client2.js exited with code 0
+[2] sleep 2; node client1.js exited with code 0
+[1] sleep 1; node server.js exited with code 0
 ```
 
 ### TODO
