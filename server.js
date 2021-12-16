@@ -64,6 +64,7 @@ function shutdown() {
 
   socketServer.close();
   fifoWs.close();
+  fs.unlinkSync(process.env.PIPE_FILE_NAME)
   shm.detachAll();
 
   process.exit(0);
