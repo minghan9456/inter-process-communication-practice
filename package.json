@@ -1,0 +1,17 @@
+{
+  "name": "inter-process-communication-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"node client2.js\" \"sleep 1; node server.js\" \"sleep 2; node client1.js\"  -i --default-input-target 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.4.0",
+    "dotenv": "^10.0.0",
+    "shm-typed-array": "^0.0.15"
+  }
+}
