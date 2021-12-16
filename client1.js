@@ -3,7 +3,7 @@ const net = require('net');
 
 const client = new net.Socket();
 client.connect(process.env.SOCKET_SERVER_PORT, '127.0.0.1', () => {
-	console.log('Client1 is ready.');
+  console.log('Client1 is ready.');
 });
 
 client.on('data', (buf) => {
@@ -31,5 +31,5 @@ client.on('data', (buf) => {
 });
 
 client.on('close', () => {
-	console.log('Client1 Connection Closed.');
+  console.log('Client1 Connection Closed.');
 });

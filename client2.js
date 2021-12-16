@@ -5,7 +5,7 @@ const { spawn, fork } = require('child_process');
 let fifo = spawn('mkfifo', [process.env.PIPE_FILE_NAME]);
 
 fifo.on('exit', function(status) {
-	console.log('Client2 is ready.');
+  console.log('Client2 is ready.');
 
   const fd = fs.openSync('./testfifo', 'r+');
   let fifoRs = fs.createReadStream(null, { fd });
